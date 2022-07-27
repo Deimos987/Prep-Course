@@ -18,10 +18,10 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad => 18){
-    return "Allowed"
+    return "Allowed";
   }
   else{
-    return "Not Allowed"
+    return "Not allowed";
   }
 }
   
@@ -50,7 +50,7 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if (idioma === "alemán"){
-    return "Guten tag!";
+    return "Guten Tag!";
   }
     else if (idioma === "mandarin"){
       return "Ni Hao!";
@@ -59,7 +59,7 @@ function saludo(idioma) {
         return "Hello!";
       }
   else{
-    return "hola!";
+    return "Hola!";
   }    
 }
 
@@ -176,7 +176,7 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   for (var i = 2; i < numero/2; i++){
     if (numero % i === 0){
-      return false;
+      return "falso";
     }
     else{
       return true;
@@ -203,8 +203,8 @@ function tablaDelSeis(){
   var arraytablaDelSeis= [];
   for (var i = 0; i <= 10; i++){
       arraytablaDelSeis.push(6 * i);
-      return arraytablaDelSeis;
   }
+  return arraytablaDelSeis;
 }
 
 function tieneTresDigitos(numero){
@@ -225,8 +225,8 @@ function doWhile(numero) {
   var num = numero;
   var i = 0;
   do{
-    i= i + 1;
-    num= numero + 5;
+    i = i + 1;
+    num = numero + 5;
   }
   while (i <= 8);
   return num;
